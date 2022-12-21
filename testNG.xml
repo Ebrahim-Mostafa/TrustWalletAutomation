@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TrustWallet Automation" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="Listeners.TestScreenCaptureListener"/>
+    </listeners>
+
+    <test name="Trust Wallet Automation Testing On Android">
+        <parameter name="os" value="${os}" />
+        <classes>
+            <class name="tests.WelcomeTest"/>
+            <class name="tests.LegalTest"/>
+            <class name="tests.CreateNewWalletTest"/>
+<!--            <class name="tests.PassCodeTest"/>-->
+        </classes>
+    </test> <!-- configuration annotation Test -->
+</suite> <!-- Suite -->
