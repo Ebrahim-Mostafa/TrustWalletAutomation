@@ -2,9 +2,10 @@ package pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import setups.BaseDeviceTest;
 
-public class WelcomePage extends BaseDeviceTest {
+import static setups.BaseDeviceTest.element;
+
+public class WelcomePage {
 
     public static AndroidDriver driver;
 

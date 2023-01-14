@@ -62,9 +62,9 @@ public class TestScreenCaptureListener implements ITestListener {
             destDir = "screenshots/Failures";
         }
         // If status = pass then set folder name "screenshots/Success"
-        else if (status.equalsIgnoreCase("pass")) {
-            destDir = "screenshots/Success";
-        }
+//        else if (status.equalsIgnoreCase("pass")) {
+//            destDir = "screenshots/Success";
+//        }
 
         // To create folder to store screenshots
         new File(destDir).mkdirs();

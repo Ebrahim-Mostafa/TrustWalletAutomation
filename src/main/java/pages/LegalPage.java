@@ -1,9 +1,10 @@
 package pages;
 
 import org.openqa.selenium.By;
-import setups.BaseDeviceTest;
 
-public class LegalPage extends BaseDeviceTest {
+import static setups.BaseDeviceTest.element;
+
+public class LegalPage {
 
     public By screenTitle = By.id("com.wallet.crypto.trustapp:id/title");
     public By privacyPolicy = By.id("com.wallet.crypto.trustapp:id/privacy");

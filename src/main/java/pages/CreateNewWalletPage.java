@@ -1,9 +1,10 @@
 package pages;
 
 import org.openqa.selenium.By;
-import setups.BaseDeviceTest;
 
-public class CreateNewWalletPage extends BaseDeviceTest {
+import static setups.BaseDeviceTest.element;
+
+public class CreateNewWalletPage {
 
     public By createANewWalletBtn = By.id("com.wallet.crypto.trustapp:id/new_account_action");
     public By firstConsent = By.id("com.wallet.crypto.trustapp:id/concent1");
