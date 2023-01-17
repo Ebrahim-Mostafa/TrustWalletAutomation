@@ -9,7 +9,7 @@ This automation created using POM design pattern. What is POM? POM stands for Pa
 Then for Scenario scripting, we will use Cucumber and Gherkin.<br/>
 What is Cucumber? What is Gherkin?<br/>
 **Cucumber** is a tool that supports BDD *(Behavior-Driven Development)*.<br/>
-**Gherkin** is a set of grammar rules that makes plain text structured enough to be understood by Cucumber. Scenario scripts are written using Gherkin.<br/><br/>Referensi: https://docs.cucumber.io/docs/guides/overview/
+**Gherkin** is a set of grammar rules that makes plain text structured enough to be understood by Cucumber. Scenario scripts are written using Gherkin.<br/><br/>Reference: https://docs.cucumber.io/docs/guides/overview/
 
 ## 3. Preparation
 
@@ -129,7 +129,9 @@ For running the automation, we can open scenario file. For example, we will run 
 
 1. Open `WelcomeTest.java class`
 2. Right click one of scenario, then click Run.
-3. Run from the terminal by using the following command `mvn clean test`.
+3. Run from the terminal by using the following command `mvn clean test`:
+   > mvn clean test -Dfile=testNG.xml <br />
+   > mvn clean test -Dfile=CucumberTestRunner.xml 
 4. Run from IntelliJ by adding testNG.xml file to the project configuration runner.
 
 
