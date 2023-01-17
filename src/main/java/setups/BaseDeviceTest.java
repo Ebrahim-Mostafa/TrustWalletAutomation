@@ -69,6 +69,7 @@ public class BaseDeviceTest extends AbstractTestNGCucumberTests {
         caps.setCapability(MobileCapabilityType.NO_RESET, false);
         caps.setCapability("unicodeKeyboard", false);
         caps.setCapability("resetkeyboard", false);
+//        caps.setCapability("autoGrantPermissions", "true");
         caps.setCapability("newCommandTimeout", 4000);
         caps.setCapability("adbExecTimeout", 10000);
         return caps;

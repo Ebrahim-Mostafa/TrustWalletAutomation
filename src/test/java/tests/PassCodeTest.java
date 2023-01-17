@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class PassCodeTest extends BaseDeviceTest {
 
-    public WelcomePage wp = new WelcomePage();
+    public WelcomePage wp = new WelcomePage(driver);
 
     @Test(priority = 18)
     public void createPassCode() throws IOException, InterruptedException {

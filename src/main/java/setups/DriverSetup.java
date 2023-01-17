@@ -7,7 +7,7 @@ import org.openqa.selenium.Capabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static pages.WelcomePage.driver;
+import static setups.BaseDeviceTest.driver;
 
 public class DriverSetup extends DriverPool {
 
@@ -17,7 +17,7 @@ public class DriverSetup extends DriverPool {
 //        Capabilities capabilities = new Capabilities();
 //        capabilities.localAndroid();
 //        AndroidDriver driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),capabilities);//capabilities.localAndroid()
-        setDriverInstance(driver);
+        setDriverInstance((AndroidDriver) driver);
         System.out.println("Driver: " + driver);
     }
 

@@ -4,6 +4,7 @@
 
     <listeners>
         <listener class-name="Listeners.TestScreenCaptureListener"/>
+<!--        <listener class-name="retrylogic.RetryListener"/>-->
     </listeners>
 
     <test name="Trust Wallet Automation Testing On Android">
@@ -12,7 +13,7 @@
             <class name="tests.WelcomeTest"/>
             <class name="tests.LegalTest"/>
             <class name="tests.CreateNewWalletTest"/>
-<!--            <class name="tests.PassCodeTest"/>-->
+            <!--            <class name="tests.PassCodeTest"/>-->
         </classes>
     </test> <!-- configuration annotation Test -->
 </suite> <!-- Suite -->

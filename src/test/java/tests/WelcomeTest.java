@@ -1,5 +1,6 @@
 package tests;
 
+import io.cucumber.java8.Th;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -9,13 +10,13 @@ import setups.BaseDeviceTest;
 
 public class WelcomeTest extends BaseDeviceTest{
 
-    public WelcomePage wp = new WelcomePage();
+    public WelcomePage wp;
     CreateNewWalletPage CNWP = new CreateNewWalletPage();
     public SoftAssert sa = new SoftAssert();
 
     @BeforeClass
     public void Initialization(){
-        wp = new WelcomePage();
+        wp = new WelcomePage(driver);
         CNWP = new CreateNewWalletPage();
         sa = new SoftAssert();
     }
@@ -64,7 +65,7 @@ public class WelcomeTest extends BaseDeviceTest{
     @Test(priority = 7)
     public void checkThatCreateNewWalletBtnIsDisplayed() {
         sa.assertEquals(CNWP.checkCreateNewWalletBtnIsDisplayed(),true);
-        CNWP.clickOnCreateNewWalletBtn();
+        wp.clickOnCreateNewWalletBtn();
         sa.assertAll();
     }
 

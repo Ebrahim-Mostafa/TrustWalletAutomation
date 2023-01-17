@@ -29,7 +29,7 @@ public class TestScreenCaptureListener implements ITestListener {
 
     // This method will execute only when the test is pass.
     public void onTestSuccess(ITestResult tr) {
-        captureScreenShot(tr, "pass");
+//        captureScreenShot(tr, "pass");
     }
 
     // This method will execute only on the event of fail test.

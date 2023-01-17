@@ -3,7 +3,13 @@
 
 <suite name="TrustWallet Cucumber Automation Suite">
 
+    <listeners>
+        <listener class-name="Listeners.TestScreenCaptureListener"/>
+        <!--        <listener class-name="retrylogic.RetryListener"/>-->
+    </listeners>
+
     <test name="TrustWallet Test On Android">
+        <parameter name="os" value="${os}" />
         <classes>
             <class name="cucumber.runner.TestRunner"/>
         </classes>
